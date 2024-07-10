@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            background-color: rgb(151, 52, 52);
+            height: 80px;
+            position: static;
+            top: 100px;
+        }
+        #d2{
+            background-color: rgb(74, 74, 161);
+            height: 80px;
+            position: relative;
+            /* top: 50px; */
+            /* left: 50px; */
+            /*related to its static position*/
+        }
+        #d3{
+            background-color: yellowgreen;
+            height: 100px;
+            width: 200px;
+            position: fixed;
+            /* top: 110px; */
+            /* right: 80px; */
+            z-index: 1;
+        }
+        #d4{
+            background-color: grey;
+            height: 80px;
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            /* z-index: -1; */
+            /*related to parent element*/
+        }
+        #p{
+            background-color: rgb(116, 87, 52);
+            height: 200px;
+            width: 400px;
+            position: relative;
+
+        }
+        #d5{
+            background-color: rgb(30, 81, 30);
+            height: 80px;
+            position: sticky;
+            top: 0;
+        }
+        image{
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">Static</div>
+    <div id="d2">Relative</div>
+    <div id="d3"><h3>fixed</h3>Position:fixed is an inline-block element</div>
+    <div id="p">
+        <div id="d4">Absolute</div>
+    </div>
+    <!-- <div id="d5">Sticky</div> 
+    <image src="./MinDillB&W.jpg"></image>-->
+</body>
+</html>

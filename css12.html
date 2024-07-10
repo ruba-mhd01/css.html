@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .parent{
+            background-color: bisque;
+            height: 500px;
+            /* width: 500px;
+            display: flex;
+            align-items: start;
+            align-content: start;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            order: ;
+            flex-grow: ;
+            flex-shrink: ;
+            flex-basis: ;
+            flex: ; */
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            /* grid-template-columns: 100px 100px 100px; */
+            /* gap: 10px 50px; */
+            grid-template-rows: auto auto auto;
+            /* justify-content: space-between;
+            align-content: space-around; */
+         }
+         .child{
+            background-color: blue;
+            border: 5px solid black;
+            /* height: 100px;
+            width: 100px; 
+            color: aliceblue; */
+         }
+         #d1{
+            grid-column: 1/3 ;
+         }
+        #d9{
+            grid-row: 1/4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+      <div id="d1" class="child">1</div>
+      <div id="d2" class="child">2</div>
+      <div id="d3" class="child">3</div>
+      <div id="d4" class="child">4</div>
+      <div id="d5" class="child">5</div>
+      <div id="d6" class="child">6</div>
+      <div id="d7" class="child">7</div>
+      <div id="d8" class="child">8</div>
+      <div id="d9" class="child">9</div>
+    </div>
+</body>
+</html>

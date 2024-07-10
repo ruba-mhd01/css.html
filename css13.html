@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #c div{
+            color: green;
+        }
+        #c>div{
+            border: solid red 3px;
+        }
+        #p+p{
+            background-color: rgb(191, 113, 113);
+        }
+        #p~p{
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p>sibling3</p>
+    <div id="p">
+        <div id="c">
+            <div>
+                Child
+                <div>
+                   Grand child
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>sibling1</p>
+    <p>sibling2</p>
+</body>
+</html>
